@@ -10,8 +10,3 @@ class OrderedPoint extends Point with scala.math.Ordered[Point] {
    }
 }
 
-object OrderedPoint {
-
-   def main(args : Array[String]) {
-   }
-}
