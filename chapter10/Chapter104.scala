@@ -18,3 +18,14 @@ class CryptoLogger extends Logger  {
    }
 }
 
+object CryptoLogger {
+
+   def main(args : Array[String]) {
+      val defaultLogger = new CryptoLogger();
+      defaultLogger.log("hello, world!")
+      val overridenLogger = new CryptoLogger {
+         override val key = -3
+      }
+      overridenLogger.log("hello, world!")
+   }
+}
